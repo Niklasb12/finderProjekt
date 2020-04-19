@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd7880edd1.js"></script>
+    <title>Finder</title>
+    <link class="logo__icon" rel="icon" href="img/LogoFinderV213.png">
+</head>
+
+<body>
+
+    <!-- Register Page -->
+    <div class="Reg__Wrapper Hidden hideable">
+        <div class="Reg__Items">
+            <div class="Reg__Item-Left">
+                <img class="Reg__Image" src="./img/image1.png">
+            </div>
+            <div class="Reg__Item-Right">
+                <div class="Reg__Logo">
+                    <img src="./img/LogoFinderV21.png">
+                </div>
+                <div class="Form__Container">
+                    <form class="Reg-Form-1" id="Reg-Form-1">
+                        <div class="Form__Input-Wrap">
+                            <i class="fas fa-user-alt"></i>
+                            <input type="text" name="username" placeholder="Användarnamn" class="username">
+                        </div>
+                        <p class="Error Hidden"></p>
+                        <div class="Form__Input-Wrap">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email" class="email">
+                        </div>
+                        <p class="Error__Email Hidden__Email"></p>
+                        <div class="Form__Input-Wrap">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" placeholder="Lösenord" class="password">
+                        </div>
+                        <div class="Form__Input-Wrap">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="repeatPassword" placeholder="Upprepa lösenord" class="repeat-password">
+                        </div>
+                        <p class="Error__Password Hidden__Password"></p>
+                        <div class="Form__Input-Wrap">
+                            <i class="fas fa-gamepad"></i>
+                            <select class="gejms games" name="gejms">
+                                <option class="disabled" value="" disabled selected>Välj ett spel</option>
+                              </select>
+                        </div>
+                        <div class="Form__Input-Wrap">
+                            <i class="fab fa-discord Form__Input-Discord"></i>
+                            <input type="text" name="usernameDiscord" placeholder="Användarnamn Discord" class="usernameDiscord">
+                        </div>
+                        <div class="Form__Input-Wrap">
+                            <i class="fab fa-steam Form__Input-Steam"></i>
+                            <input type="text" name="usernameSteam" placeholder="Användarnamn Steam" class="usernameSteam">
+                        </div>
+                        <div class="Form__Input-Wrap">
+                            <img src="img/Origin1.svg" class="Form__Input-Origin">
+                            <input type="text" name="usernameOrigin" placeholder="Användarnamn Origin" class="usernameOrigin">
+                        </div>
+                        <p class="Error__Password Hidden__Password"></p>
+                        <div class="Reg-Btn__Container">
+                            <button class="Back-Btn nav-link" type="submit">Tillbaka</button>
+                            <button class="Reg-Btn nav-link" type="submit">Skapa</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Register Page -->
+
+    <!-- Matchning Page -->
+    <div class="Match__Games Hidden hideable">
+        <div class="Match-Games__Logo-Button">
+            <div class="Logo-Button__Logo">
+                <img src="./img/LogoFinderV21.png" alt="">
+            </div>
+            <div class="Logo-Button__Button">
+                <p class="Button__GoToProfile">Gå till profil</p>
+            </div>
+        </div>
+        <div class="Match-Games__Matching">
+            <div class="Matching__Heading">
+                <h3>Välj spel som ska matchas i realtid med en partner</h3>
+            </div>
+            <div class="Matching__Games-Button">
+                <select class="gejms Games-Button__Button" name="gejms">
+                        <option class="disabled" value="" disabled selected>Välj ett spel!</option>
+                  </select>
+                <div class="Match__Button">
+                    <p>Börja matcha</p>
+                </div>
+            </div>
+        </div>
+        <!--Matchningslistan-->
+        <div class="Match-User">
+            <div class="Inner__Div">
+                <article class="Match__Lis Prototype">
+                    <div class=" Match-List__Image-Username">
+                        <img class="Image-Username__Image" src="./img/boy-sitting.jpg" alt=" ">
+                        <div class="Match-Info">
+                            <h3 class="Match-Username">Greta</h3>
+                            <p class="Match-Age">Ålder:12</p>
+                            <p class="Match-Gender">Man</p>
+                        </div>
+                    </div>
+                    <div class="Match-List__Info">
+                        <div class="Info__Game">
+                            <i class="fas fa-gamepad"></i>
+                            <p class="Info__Game-Text">Spel: Båt-spelet</p>
+                        </div>
+
+                        <div class="thumbs__Buttons">
+                            <i class="far fa-thumbs-up likeBtn"></i>
+                            <i class="far fa-thumbs-down dislikeBtn"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <!-- End of Matchning Page -->
+
+    <!-- Log in -->
+    <div class="Log__Wrapper Hidden hideable">
+        <div class="Log__Items">
+            <div class="Log__Item-Left">
+                <img class="Log__Image" src="./img/loginpage.png">
+            </div>
+            <div class="Log__Item-Right">
+                <div class="Log__Logo">
+                    <img src="./img/LogoFinderV21.png">
+                </div>
+                <p class="Success"></p>
+                <div class="Log__Container ">
+                    <form class="Log-Form-1" id="Log-Form-1">
+                        <div class="Form__Input-Wrap">
+                            <i class="fas fa-user-alt"></i>
+                            <input type="text" name="username" placeholder="Användarnamn" class="username">
+                        </div>
+                        <p class="Error__Email Hidden__Email"></p>
+                        <div class="Form__Input-Wrap">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" placeholder="Lösenord" class="password">
+                        </div>
+                        <p class="Error__Password Hidden__Password"></p>
+                        <button class="Log-Btn nav-link" type="submit ">Logga in</button>
+                        <button class="Create-Btn nav-link" type="submit ">Registrera</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Log in code -->
+
+    <!-- Update Profile -->
+    <div class="Update-Profile Hidden hideable">
+        <div class="Update-Profile__Heading">
+            <h1>Redigera din finderprofil</h1>
+        </div>
+        <div class="Update-Profile__Content">
+            <div class="Content__Profile">
+                <h2 class="Profile__Heading">
+                    Profilbild
+                </h2>
+
+                <div class="Profil__Picture-Button">
+                    <img src="./img/LogoFinderV21.png" alt="your image" class="Profile__Profile-Picture myImg">
+                    <input type="file" id="avatar">
+                </div>
+                <div class="Profile__Gender">
+                    <h3 class="Gender__Heading">Kön</h3>
+                    <input type="text" name="gender" class="Gender__Input" placeholder="Kön">
+                </div>
+                <div class="Profile__Age">
+                    <h3 class="Age__Heading">Ålder</h3>
+                    <input type="text" name="age" class="Age__Input" placeholder="Skriv din ålder!">
+                </div>
+                <div class="Profile__City">
+                    <h3 class="City__Heading">Stad</h3>
+                    <input type="text" name="city" class="City__Input" placeholder="Vart bor du?">
+                </div>
+                <div class="Profile__Discord">
+                    <h3 class="Discord__Heading">Användarnamn till Discord</h3>
+                    <input type="text" name="usernameDiscord" class="Discord__Input" placeholder="Discord">
+                </div>
+                <div class="Profile__Steam">
+                    <h3 class="Steam__Heading">Användarnamn till Steam</h3>
+                    <input type="text" name="usernameSteam" class="Steam__Input" placeholder="Steam">
+                </div>
+                <div class="Profile__Origin">
+                    <h3 class="Origin__Heading">Användarnamn till Origin</h3>
+                    <input type="text" name="usernameOrigin" class="Origin__Input" placeholder="Origin">
+                </div>
+                <h2 class="Profile-Right__Heading">Välj ett spel som du vill matcha med</h2>
+                <div class="Profile-Right__Select">
+                    <select name="games" class="Profile-Right__Select-Game gejms">
+                            <option class="disabled" value=" " disabled selected>Välj ett spel!</option>
+                        </select>
+                </div>
+                <div class="Profil-Right__Button-div">
+                    <button type="submit" class="Profile-Right__Back nav-link">Tillbaka</button>
+                    <button type="submit" class="Profile-Right__Update nav-link">Uppdatera</button>
+                </div>
+                <div class="Change-Password__Button">Vill du ändra lösenord?</div>
+            </div>
+        </div>
+        <div class="Delete">
+            <div class="Delete__Button">Vill du ta bort ditt konto?</div>
+        </div>
+    </div>
+    <!-- End of Update Profile -->
+
+    <div class="Delete-Account Hidden">
+        <div class="Delete-Account__Close">
+            <div class="Close__Heading">
+                <h3>Vill du ta bort ditt konto?</h3>
+            </div>
+            <div class="Close__Close-Button">
+                <span class="Delete-Account__Close">&times;</span>
+            </div>
+        </div>
+        <div class="Delete-Account__Input">
+            <p class="Input__Confirm">Bekräfta ditt lösenord:</p>
+            <input type="password" name="delete-password" class="Delete-Account__Password" placeholder="Skriv in ditt lösenord">
+        </div>
+        <p class="Input__Error"></p>
+        <div class="Delete-Account__Button-wrap">
+            <div class="Delete-Account__Button">Delete</div>
+        </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div class="Profile__Wrappe Hidden hideable">
+        <div class="Profile__Background">
+            <div class="Profile-Picture__Wrapper">
+                <div class="Profile__Picture">
+                    <img src=" " alt="" class="Profile-Picture__Img">
+                </div>
+            </div>
+            <div class="Profile__Info">
+                <div class="Profile-Info__Personal">
+                    <div class="Personal__Username-City">
+                        <h1 class="Profile-Info__Username-Age"></h1>
+                        <p class="Profile-Info__City"></p>
+                    </div>
+                </div>
+                <div class="Profile-Info__Discord">
+                    <i class="fab fa-discord Profile__Discord-Logo"></i>
+                    <p class="Profile-Info__Username-Discord"></p>
+                </div>
+                <div class="Profile-Info__Steam">
+                    <i class="fab fa-steam Profile__Steam-Logo"></i>
+                    <p class="Profile-Info__Username-Steam"></p>
+                </div>
+                <div class="Profile-Info__Origin">
+                    <img src="./img/origin.jpg" alt="" class="Origin__Logo">
+                    <p class="Profile-Info__Username-Origin"></p>
+                </div>
+            </div>
+            <div class="Profile__Button">
+                <p class="Profile-Button__Update nav-link">Redigera profil</p>
+                <p class="Profile-Button__Logout">Logga ut</p>
+            </div>
+        </div>
+        <div class="Profile__Wrapper-Container">
+            <div class="Profile__Match-Button">
+                <div class="Match-Button">
+                    <p>Börja matcha</p>
+                </div>
+            </div>
+            <div class="Profile__MatchList">
+                <h2 class="MatchList__Heading">Mina matchningar</h2>
+                <div class="Append">
+                    <div class="User__match Prototype">
+                        <div class="MatchList__Info">
+                            <p class="MatchList__Username">Username</p>
+                            <div class="center">
+                                <i class="fas fa-user-times deleteBtn"></i>
+                            </div>
+                        </div>
+                        <div class="Line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Profile Page -->
+
+    <!-- User Profile Page for visitors -->
+    <div class="Match__User Hidden hideable">
+        <div class="Match-User__Logo-Button">
+            <div class="Logo-Button__Logo">
+                <img src="./img/LogoFinderV21.png" alt=" ">
+            </div>
+            <div class="Logo-Button__Button">
+                <p class="User__Back">Gå till profil</p>
+            </div>
+        </div>
+        <div class="Match-User__Info">
+            <article class="Match__List2 Prototype">
+                <div class="Match-List__Image-Username">
+                    <img class="Image-Username__Image" src="./img/boy-sitting.jpg" alt=" ">
+                    <div class="Match-Info">
+                        <h3 class="Match-Username">Greta</h3>
+                        <p class="Match-Age">Ålder:12</p>
+                    </div>
+                </div>
+                <div class="Match-List__Info">
+                    <div class="Game-Div">
+                        <div class="Profile-Info__Discord">
+                            <div class="Logo-Div"><i class="fas fa-gamepad logoGame"></i></div>
+                            <p class="Match-Game ">Spel: Båt-spelet</p>
+                        </div>
+                        <div class="Profile-Info__Discord">
+                            <div class="Logo-Div"><i class="fab fa-discord Profile__Discord-Logo"></i></div>
+                            <p class="Match-Discord"></p>
+                        </div>
+                        <div class="Profile-Info__Steam">
+                            <div class="Logo-Div"><i class="fab fa-steam Profile__Steam-Logo"></i></div>
+                            <p class="Match-Steam"></p>
+                        </div>
+                        <div class="Profile-Info__Origin">
+                            <div class="Logo-Div"><img src="./img/origin.jpg" alt=" " class="Origin__Logo"></div>
+                            <p class="Match-Origin"></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <!-- End of User Profile Page for visitors -->
+
+    <div class="Change__Password Hidden hideable">
+        <div class="Change-Password__Item">
+            <div class="Log__Logo">
+                <img src="./img/LogoFinderV21.png">
+            </div>
+            <p class="confirmChangePassword"></p>
+            <div class="Change-Password__Container">
+
+                <form class="Change-Password__Form">
+                    <div class="Change-Password__Input-Wrap">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="oldPassword" placeholder="Lösenord" class="oldPassword" required>
+                    </div>
+                    <div class="Change-Password__Input-Wrap">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="newPassword" placeholder="Nytt Lösenord" class="newPassword" required>
+                    </div>
+                    <div class="Change-Password__Input-Wrap">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="confirmPassword" placeholder="Skriv in Lösenordet igen" class="confirmPassword" required>
+                    </div>
+                    <div class="Change-Password__Container">
+                        <button class="Change__Back-Btn" type="submit">Tillbaka</button>
+                        <button class="Change__Password-Btn" type="submit">Ändra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
